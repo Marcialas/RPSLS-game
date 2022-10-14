@@ -1,5 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Rock+Salt&display=swap');
 
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
 html {
     min-height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Rock Salt', sans-serif;
+}
+
+/*options styling*/
+
+.wrapper {
+    width: 80%;
+    padding: 0 10px;
+}
+
+#options {
+    display: flex;
+}
+.options-item {
+    width: calc(20% - 30px);
+    margin: 10px;
+    flex-wrap: wrap;
+}
+.options-item input[type=radio] {
+    display: none;
+}
+
+.choice-container form {
+    justify-content: center;
+
 }

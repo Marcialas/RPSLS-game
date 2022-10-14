@@ -19,11 +19,40 @@
 
         <div class="choice-container">
             <p>Make your choice!</p>
-            <button aria-label="Rock" data-choice="0" class="control">Rock</button>
-            <button aria-label="Paper" data-choice="1" class="control">Paper</button>
-            <button aria-label="Scissors" data-choice="2" class="control">Scissors</button>
-            <button aria-label="Lizard" data-choice="3" class="control">Lizard</button>
-            <button aria-label="Spock" data-choice="4" class="control">Spock</button>
+            <div class="wrapper">
+                <form id="options">
+                    <div class="options-item">
+                        <label for="rock">
+                            <img src="assets/images/rock.png" alt="Rock">
+                            <input type="radio" id="rock" name="options" value="rock">
+                        </label>
+                    </div>
+                    <div class="options-item">
+                        <label for="paper">
+                            <img src="assets/images/paper.png" alt="Paper">
+                            <input type="radio" id="paper" name="options" value="paper">
+                        </label>
+                    </div>
+                    <div class="options-item">
+                        <label for="scissors">
+                            <img src="assets/images/scissors.png" alt="Scissors">
+                            <input type="radio" id="scissors" name="options" value="scissors">
+                        </label>
+                    </div>
+                    <div class="options-item">
+                        <label for="lizard">
+                            <img src="assets/images/lizard.png" alt="Lizard">
+                            <input type="radio" id="lizard" name="options" value="lizard">
+                        </label>
+                    </div>
+                    <div class="options-item">
+                        <label for="spock">
+                            <img src="assets/images/spock.png" alt="Spock">
+                            <input type="radio" id="spock" name="options" value="spock">
+                        </label>
+                    </div>
+                </form>
+            </div>
         </div>
 
         <div class="player-container">
