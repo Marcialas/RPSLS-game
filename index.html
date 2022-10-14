@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,37 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>GAME TIME</title>
 </head>
+
 <body>
     <header>
         <h2>Rock, Paper, Scissors, Lizard, Spock</h2>
+        <div>Rules</div>
     </header>
-    
-    <section class="game-area">
-        <div>choice area</div>
 
-        <div>result area</div>
+    <main class="game-area">
 
-        <div>player choice</div>
+        <div class="choice-container">
+            <p>Make your choice!</p>
+            <button aria-label="Rock" data-choice="0" class="control">Rock</button>
+            <button aria-label="Paper" data-choice="1" class="control">Paper</button>
+            <button aria-label="Scissors" data-choice="2" class="control">Scissors</button>
+            <button aria-label="Lizard" data-choice="3" class="control">Lizard</button>
+            <button aria-label="Spock" data-choice="4" class="control">Spock</button>
+        </div>
 
-        <div>computer choice</div>
+        <div class="player-container">
+            <h3 class="score">Your score: <span id="player-score">0</span></h3>
+            <div class="player-choice"></div>
+        </div>
 
-    </section>
+        <div class="computer-container">
+            <h3 class="score">Computer score: <span id="computer-score">0</span></h3>
+            <div class="computer-choice"></div>
+        </div>
+
+        <div id="message">whos the winner?</div>
+    </main>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
