@@ -14,8 +14,30 @@ body {
     text-align: center;
     background-color: #00664e;
 }
+/* Rules style */
 
-/*options styling*/
+.rules-box {
+    text-align: center;
+    margin: 50px 150px;
+    font-family: Arvo, sans-serif;
+    background-color: #003d2f;
+    padding: 10px 20px 20px 20px;
+    border: 5px solid black;
+    border-radius: 70px;
+}
+.quote {
+    text-align: right;
+    margin-bottom: 0;
+    font-size: 0.7rem;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .rules-box {
+        margin: 10px 20px;
+    }
+}
+/* Options styling */
 
 .wrapper {
     width: 100%;
