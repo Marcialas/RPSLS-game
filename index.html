@@ -13,65 +13,55 @@
     <header>
         <h2>Rock, Paper, Scissors, Lizard, Spock</h2>
         <div class="rules-box">
-            <p class="rules-text">Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes
+            <p class="rules-text">Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock,
+                Spock smashes
                 scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock,
                 and as it always has, rock crushes scissors.</p>
-                <p class="quote">Dr. Sheldon Lee Cooper, B.Sc., M.Sc., M.A., Ph.D., Sc.D.</p>
+            <p class="quote">Dr. Sheldon Lee Cooper, B.Sc., M.Sc., M.A., Ph.D., Sc.D.</p>
         </div>
     </header>
 
     <main class="game-area">
 
-        <div class="choice-container">
-            <p>Make your choice!</p>
+        <div>
+            <h3>Make your choice!</h3>
             <div class="wrapper">
-                <form id="options">
-                    <div class="options-item">
-                        <label for="rock">
-                            <img src="assets/images/rock.png" alt="Rock">
-                            <input type="radio" id="rock" name="options" value="rock">
-                        </label>
-                    </div>
-                    <div class="options-item">
-                        <label for="paper">
-                            <img src="assets/images/paper.png" alt="Paper">
-                            <input type="radio" id="paper" name="options" value="paper">
-                        </label>
-                    </div>
-                    <div class="options-item">
-                        <label for="scissors">
-                            <img src="assets/images/scissors.png" alt="Scissors">
-                            <input type="radio" id="scissors" name="options" value="scissors">
-                        </label>
-                    </div>
-                    <div class="options-item">
-                        <label for="lizard">
-                            <img src="assets/images/lizard.png" alt="Lizard">
-                            <input type="radio" id="lizard" name="options" value="lizard">
-                        </label>
-                    </div>
-                    <div class="options-item">
-                        <label for="spock">
-                            <img src="assets/images/spock.png" alt="Spock">
-                            <input type="radio" id="spock" name="options" value="spock">
-                        </label>
-                    </div>
-                </form>
+                <div class="options-container">
+                    <button onclick="clicked('Rock')"><img src="assets/images/rock.png"
+                            alt="Rock"></button>
+                </div>
+                <div class="options-container">
+                    <button onclick="clicked('Paper')"><img src="assets/images/paper.png"
+                            alt="Paper"></button>
+                </div>
+                <div class="options-container">
+                    <button onclick="clicked('Scissors')"><img src="assets/images/scissors.png"
+                        alt="Scissors"></button>
+                </div>
+                <div class="options-container">
+                    <button onclick="clicked('Lizard')"><img src="assets/images/lizard.png"
+                        alt="Lizard"></button>
+                </div>
+                <div class="options-container">
+                    <button onclick="clicked('Spock')"><img src="assets/images/spock.png"
+                        alt="Spock"></button>
+                </div>
             </div>
         </div>
+        <div id="message">whos the winner?</div>
         <div class="score-wrapper">
             <div class="player-container">
-                <h3 class="score">Your score: <span id="player-score">0</span></h3>
-                <div class="player-choice"></div>
+                <h3 class="score">Your score: <span id="user_score">0</span></h3>
+                <div id="userChoice"></div>
             </div>
 
             <div class="computer-container">
-                <h3 class="score">Computer score: <span id="computer-score">0</span></h3>
-                <div class="computer-choice"></div>
+                <h3 class="score">Computer score: <span id="comp_score">0</span></h3>
+                <div id="compChoice"></div>
             </div>
         </div>
 
-        <div id="message">whos the winner?</div>
+
     </main>
     <script src="assets/js/script.js"></script>
 </body>
