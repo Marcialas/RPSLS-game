@@ -21,7 +21,7 @@ body {
     font-family: Arvo, sans-serif;
     background-color: #003d2f;
     padding: 10px 20px 20px 20px;
-    border: 5px solid black;
+    border: 3px solid black;
     border-radius: 70px;
 }
 .quote {
@@ -36,6 +36,7 @@ body {
         margin: 10px 20px;
     }
 }
+
 /* Options styling */
 
 .wrapper {
@@ -46,17 +47,14 @@ body {
     justify-content: center;
 }
 
-#options {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+
 .options-container {
-    width: calc(19% - 20px);
+    width: 150px;
     height: auto;
     margin: 10px;
-    object-fit: cover;
+
     transition: 0.5s;
+
 }
 .options-container:hover {
     transform: scale(1.2);
@@ -67,17 +65,29 @@ body {
 }
 
 img {
-    max-width: 100%;
+    max-width: 80%;
     border: 0;
 }
 
 /* score style */
 
 #message {
-    margin-top: 30px;
+    margin: 30px auto;
+    width: 10rem;
+
 }
 
 .score-wrapper {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    align-items: center;
+}
+
+.reset {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #003d2f;
+    border: none;
 }

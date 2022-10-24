@@ -22,37 +22,41 @@
     </header>
 
     <main class="game-area">
-
+        </div>
         <div>
             <h3>Make your choice!</h3>
+            </div>
             <div class="wrapper">
                 <div class="options-container">
-                    <button onclick="clicked('Rock')"><img src="assets/images/rock.png"
+                    <button onclick="playGame('Rock')"><img src="assets/images/rock.png"
                             alt="Rock"></button>
                 </div>
                 <div class="options-container">
-                    <button onclick="clicked('Paper')"><img src="assets/images/paper.png"
+                    <button onclick="playGame('Paper')"><img src="assets/images/paper.png"
                             alt="Paper"></button>
                 </div>
                 <div class="options-container">
-                    <button onclick="clicked('Scissors')"><img src="assets/images/scissors.png"
+                    <button onclick="playGame('Scissors')"><img src="assets/images/scissors.png"
                         alt="Scissors"></button>
                 </div>
                 <div class="options-container">
-                    <button onclick="clicked('Lizard')"><img src="assets/images/lizard.png"
+                    <button onclick="playGame('Lizard')"><img src="assets/images/lizard.png"
                         alt="Lizard"></button>
                 </div>
                 <div class="options-container">
-                    <button onclick="clicked('Spock')"><img src="assets/images/spock.png"
+                    <button onclick="playGame('Spock')"><img src="assets/images/spock.png"
                         alt="Spock"></button>
                 </div>
             </div>
         </div>
-        <div id="message">whos the winner?</div>
+        <div id="message"></div>
         <div class="score-wrapper">
             <div class="player-container">
                 <h3 class="score">Your score: <span id="user_score">0</span></h3>
                 <div id="userChoice"></div>
+            </div>
+            <div>
+                <button class="reset" onclick="reset()">RESET</button>
             </div>
 
             <div class="computer-container">
