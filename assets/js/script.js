@@ -1,9 +1,12 @@
 
 const message = document.getElementById("message");
-const computerScore = document.getElementById('comp_score');
-const playerScore = document.getElementById('user_score');
+const computerScore = document.getElementById('computer_score');
+const playerScore = document.getElementById('player_score');
 let playerScoreCount = 0;
 let computerScoreCount = 0;
+
+
+// game rules to decide who wins
 
 let gameRules = {
     Rock: {
@@ -41,20 +44,22 @@ let gameRules = {
         Lizard: 'win',
         Spock: 'draw'
     }
-}
+};
+
+// Main game function 
 
 function playGame(input) {
     let choices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
     let randomNumber = Math.floor(Math.random() * 5); 
-    let comp_choice = choices[randomNumber];
+    let computer_choice = choices[randomNumber];
 
 
-    document.getElementById("compChoice").innerHTML = `Computer choose <span>${comp_choice.toUpperCase()}</span>`;  
-    document.getElementById("userChoice").innerHTML = `You choose <span>${input.toUpperCase()}</span>`;
+    document.getElementById("computerChoice").innerHTML = `Computer choose <span>${computer_choice.toUpperCase()}</span>`;  
+    document.getElementById("playerChoice").innerHTML = `You choose <span>${input.toUpperCase()}</span>`;
 
 
-	console.log('player input', input, 'computer choice', comp_choice);
-    switch(gameRules[comp_choice][input]) {
+	console.log('player input', input, 'computer choice', computer_choice);
+    switch(gameRules[computer_choice][input]) {
         case 'win':
             message.innerText = `You win`;
             message.style.cssText = "background-color: rgb(7, 162, 40)";
@@ -74,7 +79,7 @@ function playGame(input) {
     }
 }
 
-// reset button /   
+// reset button 
 
 function reset() {
     computerScoreCount = 0;

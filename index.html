@@ -8,66 +8,62 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>GAME TIME</title>
 </head>
-
 <body>
     <header>
         <h2>Rock, Paper, Scissors, Lizard, Spock</h2>
-        <div class="rules-box">
-            <p class="rules-text">Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock,
-                Spock smashes
-                scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock,
-                and as it always has, rock crushes scissors.</p>
-            <p class="quote">Dr. Sheldon Lee Cooper, B.Sc., M.Sc., M.A., Ph.D., Sc.D.</p>
-        </div>
     </header>
-
     <main class="game-area">
-        </div>
         <div>
             <h3>Make your choice!</h3>
+        </div>
+
+        <!-- Game options -->
+
+        <div class="wrapper">
+            <div class="options-container">
+                <button onclick="playGame('Rock')"><img src="assets/images/rock.png" alt="Rock"></button>
             </div>
-            <div class="wrapper">
-                <div class="options-container">
-                    <button onclick="playGame('Rock')"><img src="assets/images/rock.png"
-                            alt="Rock"></button>
-                </div>
-                <div class="options-container">
-                    <button onclick="playGame('Paper')"><img src="assets/images/paper.png"
-                            alt="Paper"></button>
-                </div>
-                <div class="options-container">
-                    <button onclick="playGame('Scissors')"><img src="assets/images/scissors.png"
-                        alt="Scissors"></button>
-                </div>
-                <div class="options-container">
-                    <button onclick="playGame('Lizard')"><img src="assets/images/lizard.png"
-                        alt="Lizard"></button>
-                </div>
-                <div class="options-container">
-                    <button onclick="playGame('Spock')"><img src="assets/images/spock.png"
-                        alt="Spock"></button>
-                </div>
+            <div class="options-container">
+                <button onclick="playGame('Paper')"><img src="assets/images/paper.png" alt="Paper"></button>
+            </div>
+            <div class="options-container">
+                <button onclick="playGame('Scissors')"><img src="assets/images/scissors.png" alt="Scissors"></button>
+            </div>
+            <div class="options-container">
+                <button onclick="playGame('Lizard')"><img src="assets/images/lizard.png" alt="Lizard"></button>
+            </div>
+            <div class="options-container">
+                <button onclick="playGame('Spock')"><img src="assets/images/spock.png" alt="Spock"></button>
             </div>
         </div>
         <div id="message"></div>
+
+        <!-- Game score counter -->
+
         <div class="score-wrapper">
             <div class="player-container">
-                <h3 class="score">Your score: <span id="user_score">0</span></h3>
-                <div id="userChoice"></div>
+                <h3 class="score">Your score: <span id="player_score">0</span></h3>
+                <div id="playerChoice"></div>
             </div>
             <div>
                 <button class="reset" onclick="reset()">RESET</button>
             </div>
-
             <div class="computer-container">
-                <h3 class="score">Computer score: <span id="comp_score">0</span></h3>
-                <div id="compChoice"></div>
+                <h3 class="score">Computer score: <span id="computer_score">0</span></h3>
+                <div id="computerChoice"></div>
             </div>
         </div>
-
-
     </main>
+    
+            <!-- Game rules -->
+
+            <div class="rules-box">
+                <p class="rules-text">Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock,
+                    Spock smashes
+                    scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock,
+                    and as it always has, rock crushes scissors.</p>
+                <p class="quote">Dr. Sheldon Lee Cooper, B.Sc., M.Sc., M.A., Ph.D., Sc.D.</p>
+            </div>
     <script src="assets/js/script.js"></script>
 </body>
-
 </html>
