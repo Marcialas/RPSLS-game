@@ -73,7 +73,7 @@ function playGame(input) {
             computerScore.innerHTML = `${computerScoreCount}`;
             break;
         case 'draw':
-            message.innerText = `You draw`;
+            message.innerText = `Draw`;
             message.style.cssText = "background-color: rgb(100, 100, 100)";
             break;   
     }

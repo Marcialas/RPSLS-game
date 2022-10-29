@@ -12,6 +12,7 @@ body {
     font-family: 'Rock Salt', sans-serif;
     text-align: center;
     background-color: #00664e;
+    color: white;
 }
 /* Rules style */
 
@@ -91,4 +92,5 @@ img {
     border-radius: 50%;
     background-color: #003d2f;
     border: none;
+    color: white;
 }
