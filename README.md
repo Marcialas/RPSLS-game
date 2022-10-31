@@ -49,5 +49,42 @@
 
 <h2>Testing</h2>
 <ul>
-<li>Have tested the game with different browsers and a few mobile phones and it works without issues.</li>
+<li>Have tested the game with different browsers, like chrome and firefox, also on a few different android mobile phones and it works without issues.</li>
 <li>Have confirmed that decision making in javascript is working correctly.</li>
+<li>Have confirmed that fonts and background colours are easy to read and are accessable with lighthouse in dev tools.</li>
+</ul>
+<img src='assets/images/readmeimg/lighthouse.jpg' alt='lighthouse report'>  
+
+<h2>Bugs</h2>
+<ul>
+<li>There was a few issues to get the game working along the way, mostly with javascript as it was new to me. A lot of googling involved to find a working solution.</li>
+</ul>
+
+<br>
+<h2>Unfixed Bugs</h2>
+<p>No unfixed bugs</p>
+
+<br>
+<h2>Validator testing</h2>
+<ul>
+<li>HTML code has been checked with official W3C validator, no errors.</li>
+<li>CSS code has been checked with official W3C Jigsaw validator, no errors.</li>
+<li>Javascript code has been checked with JSHint validator, no errors.</li>
+</ul>
+
+<h2>Deployment</h2>
+<ul>
+<li>This site has been deployed to GitHub pages. Steps taken to do it, as follows
+<ul><li>In GitHub repository, go to settings</li>
+<li>Click on "pages" in navigation on the left</li>
+<li>Under "Branch" section, dropdown and select "main", then click save, link with deployed website is at the top of the page.</li>
+</ul></li>
+<li>The live Website can be found here - <a href='https://marcialas.github.io/RPSLS-game/'>Rock, Paper, Scissors, Lizard, Spock!</a></li>
+</ul>
+
+<br>
+<h2>Credits</h2>
+<ul>
+<li>Icons for the game sourced from <a href='https://icon-library.com/'>Icon-library</a> </li>
+</ul>
+
